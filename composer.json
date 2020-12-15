@@ -1,0 +1,27 @@
+{
+  "name": "gorgo13/fixture-bundle",
+  "type": "symfony-bundle",
+  "description": "",
+  "keywords": [],
+  "homepage": "http://fixtures.gorgo.in",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Nikita Makarov",
+      "email": "mesaverde228@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4",
+    "oro/platform": ">=2",
+	"theofidry/alice-data-fixtures": "1.0.*",
+	"nelmio/alice": "3.5.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Gorgo\\Bundle\\FixtureBundle": ""
+    }
+  },
+  "target-dir": "Gorgo/Bundle/FixtureBundle"
+}

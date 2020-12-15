@@ -1,0 +1,16 @@
+/.settings
+/.buildpath
+/.project
+/.idea
+/node_modules
+/composer.phar
+composer.lock
+behat.yml
+/vendor
+phpunit.xml
+*~
+bin/*
+/.web-server-pid
+/.vagrant
+/.php-version
+.php_cs.cache

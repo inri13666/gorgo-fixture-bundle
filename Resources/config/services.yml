@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        public: true
+
+    gorgo_fixture.command.load_fixtures:
+        class: 'Gorgo\Bundle\FixtureBundle\Command\LoadFixturesCommand'
+        arguments:
+            - '@gorgo_fixture.loader.fixtures_loader'
+            - '@doctrine'
+        tags:
+            - { name: console.command }
+
+    gorgo_fixture.loader.fixtures_loader:
+        class: 'Gorgo\Bundle\FixtureBundle\Loader\FixturesLoader'
+        arguments:
+            - '@kernel'
+            - '@doctrine'
+        calls:
+            - ['setContainer', ['@service_container']]

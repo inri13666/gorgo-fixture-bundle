@@ -1,0 +1,2 @@
+bundles:
+    - { name: Gorgo\Bundle\FixtureBundle\GorgoFixtureBundle, priority: 9999 }
